@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta  charset="utf-8"></meta> 
+  <link rel="stylesheet" type="text/css" href="css/yzbx.css"/>
+  <link rel="stylesheet" type="text/css" href="css/menu.css"/>
+  <script src="gnu/d3.v3.min.js"></script>
+  <script type="text/javascript" src="gnu/jquery-2.1.3.min.js"></script>
+  <script type="text/javascript" src="gnu/keypress-2.1.0.min.js"></script>
+  <script type="text/javascript" src="gnu/d3-tips.js"></script>
+  <script type="text/javascript" src="gnu/menu.js"></script>
+  <script type="text/javascript" src="gnu/dollar.js"></script>
+  <script type="text/javascript" src="js/gesture.js"></script>
+  <script type="text/javascript" src="js/globalVar.js"></script>
+
+  <title> read csv </title>
+</head>
+<body onload="onLoadEvent()">
+  <!-- menu -->
+  <ul id="sddm">
+    <li><a href="#" onmouseover="mopen('m1')" onmouseout="mclosetime()">File</a>
+      <div id="m1" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="#" onclick="alert('hello')">HTML DropDown</a>
+        <a href="#">DHTML DropDown menu</a>
+        <a href="#">JavaScript DropDown</a>
+        <a href="#">DropDown Menu</a>
+        <a href="#">CSS DropDown</a>
+      </div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m2')" onmouseout="mclosetime()">Edit</a>
+      <div id="m2" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="#" onclick="MenuSearch()">Search trajectory</a>
+        <a href="#" onclick="MenuMatch()">Match trajectory</a>
+        <a href="#" onclick="MenuShowHotmap()">Show hotmap</a>
+        <a href="#" onclick="MenuAnalyzeAbnormality()">Analyze abnormality</a>
+        <a href="#" onclick="MenuReset()">Reset</a>
+      </div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m4')" onmouseout="mclosetime()">Help</a>
+      <div id="m4" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="#">Download Help File</a>
+        <a href="#">Read online</a>
+      </div>
+    </li>
+    <li><a href="#" onmouseover="mopen('m5')" onmouseout="mclosetime()">Contact</a>
+      <div id="m5" onmouseover="mcancelclosetime()" onmouseout="mclosetime()">
+        <a href="#">E-mail youdaoyzbx@163.com</a>
+      </div>
+    </li>
+  </ul>
+  <div style="clear:both"></div>
+
+  <script src="js/svg.js"></script>
+  <script type="text/javascript" src="js/keyboard.js"></script>
+<div id="gesture_tooltip" style= "position:fixed; left:0px;bottom:0px;">
+    <p>gesture_tooltip</p>
+</div>
+</body>
+</html>
